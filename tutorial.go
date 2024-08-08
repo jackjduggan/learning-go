@@ -15,4 +15,10 @@ func main() {
 	fmt.Println("Hello World") // single quotes doesn't work for strings in Go. You use '' for char instead.
 	fmt.Println(name, boolean_var)
 	fmt.Printf("%T", number) // %T displays the type
+
+	// fmt module
+	fmt.Printf("Hello %T %v \n", 10, 10)
+	// loads of other formats for types, displaying numbers in binary or hex
+	var num_jack string = fmt.Sprintf("Number: %9q", "jack")
+	fmt.Println(num_jack)
 }
